@@ -17,7 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge=22;
+if(votingAge>18){
+  console.log('True');
+}
 
 
 /*
@@ -30,6 +33,12 @@ Do the following:
 
    HINT: no function required
 */
+let valueOne =1;
+let valueTwo =2;
+if(valueOne<valueTwo){
+  console.log(valueOne=6);
+}
+  
 
 
 
@@ -45,6 +54,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+var bestYear= "1999";
+var intYear=parseInt(bestYear);
+console.log(intYear);
 
 
 
@@ -58,9 +70,13 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+  const a=5;
+  const b=6;
+function multiply(a,b){
+  return a*b;
+
+}console.log(multiply(5,6));
+  
 
 
 
@@ -74,9 +90,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
-}
+function dogYears(ageValue){
+   var  newAge = ageValue*7;
+    return newAge;
+}console.log(dogYears(9));
 
 
 
@@ -107,9 +124,19 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
+
+/*function hungryDog(weight,years){
+  let years;
+  let feed;
+  let weight;
+  if(years>=1){
+    weight<=5 && feed==0.05;
+    return feed*weight
+  }else(weight>=6 )
+ 
     /*add your code here*/
-  }
+
+  /*
 
 
 
@@ -133,9 +160,27 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let computer =Math.random();
+if(computer<=0.34){
+  computer='rock';
+}else if(computer<=0.67){
+  computer='paper';
+}else if(computer>0.67){
+  computer='scissors';
+}
+console.log(computer);
 function game(user, computer){
     /*add your code here*/
+    if(user===computer){
+      return 'its a tie';
+    }else if(user==='rock'&& computer ==='scissors'){
+      return 'you win';
+    
+    }else if(user === 'scissors' && computer ==='paper'){
+      return 'you win'
+    }else{
+      return 'lose!'
+    }
 }
   
   
@@ -151,9 +196,13 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(kilometers){
     /*add your code here*/
-  }
+    const factor=0.621371;
+    
+    const miles=kilometers*factor;
+    return miles;
+  } console.log(miles(5));
 
 
 
@@ -165,9 +214,12 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(cm){
+  const factor=0.0328084;
+  const feet=cm*factor;
+  return feet;
     /*add your code here*/
-  }
+  }console.log(feet(2));
  
 
 
@@ -181,9 +233,32 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
+function annoyingSong(bottles){
         /*add your code here*/
+        var bottles = "bottles";
+var count = 50;
+while (count > 0) {
+  if (count == 1){
+    var bottles = "bottle"
   }
+    console.log(count + " " + bottles + " of beer on the wall");
+    console.log(count + " " + bottles + " of beer,");
+    console.log("Take one down, pass it around,");
+    count = count - 1;
+    if (count > 0) {
+      if (count == 1){
+        var bottles = "bottle"
+      }
+        console.log(count + " " + bottles + " of beer on the wall.");
+    } else {
+      if (count < 1){
+        var bottles = "bottles"
+      }
+        console.log("No more " + bottles + " of beer on the wall.");
+    }
+}
+  }console.log(annoyingSong(50));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -201,9 +276,29 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
+function grade(points){
+  let number=(points/100)*100;
+  
+  let numberGrade=number;
+    if (numberGrade >= 90) {
+
+      console.log('you got an A');
+    } else if (numberGrade >= 80) {
+     console.log( 'you got an B');
+      
+    } else if (numberGrade >= 70) {
+       console.log('you got an C');
+    } else if (numberGrade >= 60) {
+       console.log('you got an D');
+    } else {
+      console.log('you got an F');
+    }
+    return numberGrade;
+  }console.log(grade(88));
+
+
   /*Your Code here */
-  }
+  
   
   
 
